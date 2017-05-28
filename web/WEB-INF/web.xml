@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>DBaccess</servlet-name>
+        <servlet-class>pages.DBaccess</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuardianServlet</servlet-name>
+        <servlet-class>controller.GuardianServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ApplicantServlet</servlet-name>
+        <servlet-class>controller.ApplicantServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SupportDocs</servlet-name>
+        <servlet-class>controller.SupportDocs</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBaccess</servlet-name>
+        <url-pattern>/DBaccess</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardianServlet</servlet-name>
+        <url-pattern>/GuardianServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ApplicantServlet</servlet-name>
+        <url-pattern>/ApplicantServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SupportDocs</servlet-name>
+        <url-pattern>/SupportDocs</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
